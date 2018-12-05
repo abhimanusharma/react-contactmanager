@@ -14,6 +14,7 @@ import "./App.css";
 
 class App extends Component {
   render() {
+    const home_url = "/react-contactmanager";
     return (
       <Provider>
         <Router>
@@ -21,11 +22,19 @@ class App extends Component {
             <Header branding="Contact Manager" />
             <div className="container">
               <Switch>
-                <Route exact path="/" component={Contacts} />
-                <Route exact path="/contact/add" component={AddContact} />
-                <Route exact path="/contact/edit/:id" component={EditContact} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/test" component={Test} />
+                <Route exact path={`${home_url}/`} component={Contacts} />
+                <Route
+                  exact
+                  path={`${home_url}/contact/add`}
+                  component={AddContact}
+                />
+                <Route
+                  exact
+                  path={`${home_url}/contact/edit/:id`}
+                  component={EditContact}
+                />
+                <Route exact path={`${home_url}/about`} component={About} />
+                <Route exact path={`${home_url}/test`} component={Test} />
                 <Route component={NotFound} />
               </Switch>
             </div>

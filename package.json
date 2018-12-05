@@ -2,7 +2,7 @@
   "name": "contactmanager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dragonabv.github.io/react-contactmanager",
+  "homepage": "https://dragonabv.github.io/contactmanager",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
